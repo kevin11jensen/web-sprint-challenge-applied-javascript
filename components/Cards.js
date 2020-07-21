@@ -31,20 +31,20 @@ axios.get('https://lambda-times-backend.herokuapp.com/articles').then(response =
 // You will be creating a component for each 'article' in the list.
 
 //articles in list: javascript, bootstrap, technology, jquery, node
-Object.values(info.bootstrap).forEach((item) => {
+info.bootstrap.forEach((item) => {
     cards.appendChild(cardCreator(item.headline, item.authorPhoto, item.authorName));
 });
-Object.values(info.javascript).forEach((item) => {
+info.javascript.forEach((item) => {
     cards.appendChild(cardCreator(item.headline, item.authorPhoto, item.authorName));
 });
-Object.values(info.jquery).forEach((item) => {
+info.jquery.forEach((item) => {
     cards.appendChild(cardCreator(item.headline, item.authorPhoto, item.authorName));
 });
-Object.values(info.node).forEach((item) => {
+info.node.forEach((item) => {
     cards.appendChild(cardCreator(item.headline, item.authorPhoto, item.authorName));
 });
 
-Object.values(info.technology).forEach((item) => {
+info.technology.forEach((item) => {
     cards.appendChild(cardCreator(item.headline, item.authorPhoto, item.authorName));
 });
 
